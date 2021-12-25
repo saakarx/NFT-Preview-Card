@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NFT preview card component</title>
+  </head>
+  <body class="bg-blue-main text-white">
+    <main class="flex justify-center items-center min-h-screen px-4">
+      <div class="max-w-sm bg-blue-card shadow-2xl p-5 rounded-xl">
+        <div class="rounded-lg relative overflow-hidden cursor-pointer group">
+          <img
+            src="/images/image-equilibrium.jpg"
+            alt="Equilibrium Image"
+            class="h-full w-full block"
+          />
+
+          <div
+            class="
+              absolute
+              inset-0
+              bg-cyan bg-opacity-50
+              items-center
+              justify-center
+              hidden
+              group-hover:flex
+            "
+          >
+            <img src="/images/icon-view.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="flex flex-col divide-y divide-blue-soft divide-opacity-20">
+          <div class="space-y-4 my-4">
+            <h1
+              class="
+                text-xl
+                font-semibold
+                tracking-wide
+                text-white
+                hover:text-cyan
+              "
+            >
+              <a href="#"> Equilibrium #3429 </a>
+            </h1>
+
+            <p class="font-light text-lg text-blue-soft">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <img src="/images/icon-ethereum.svg" alt="Etheruem Icon" />
+                <span class="font-semibold text-cyan">0.041 ETH</span>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <img src="/images/icon-clock.svg" alt="Clock Icon" />
+                <span class="font-light text-blue-soft">3 days left</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4 pt-4 pb-2">
+            <img
+              src="/images/image-avatar.png"
+              alt="Avatar"
+              class="w-7 h-7 border border-white rounded-full"
+            />
+            <p class="text-blue-soft font-light">
+              Creation of
+              <a class="text-white hover:text-cyan" href="#">Jules Wyvern</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
